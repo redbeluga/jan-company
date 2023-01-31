@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+:root {
+  --beige: #fde9e1;
+  --grey: #f6ded7;
+  --white: white;
+  --dark--beige: #fff5f1;
+  --brown: rgb(232, 209, 207);
+  --dark--brown: #c47f7b;
+  --dark--grey: #4b403d;
+}
+
+body {
+  color: var(--dark--grey);
+  overflow: hidden;
+  min-height: 100%;
+  min-height: 100%;
+  background-color: var(--dark--beige);
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.functionContainer {
+  position: relative;
+  left: 30px;
+  top: 20px;
+  min-height: 100%;
+}
+#headerContainer {
+  outline: 1px solid var(--dark--grey);
+  /* outline: 3px solid green; */
+  position:relative;
+  background-color: var(--grey);
+  width: 100%;
+  height: 60px;
+}
+#recommendationContainer {
+  position: relative;
+  top: 20px;
+  width: 100%;
+}
+
+#recommendationWrapper {
+  overflow: scroll;
+  position: fixed;
+  top: 61px;
+  left: 321px;
+  width: 1140px;
+  height: 100vh;
+  /* outline: 2px solid green */
+}
+
+.recipeCardContainer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* outline: 2px solid brown; */
+  width: 100%;
+  position: relative;
+  /* left: 130px; */
+}
+
+#recipeCardFooter{
+  height: 85px;
+}
+
+#searchButton {
+  position: relative;
+  left: 75px
+}
+
+#mood {
+  position: absolute;
+  /* outline: 0.5px solid rgba(150, 150, 150); */
+  width: 300px;
+  left: -31px;
+  top: 40px;
+}
+
+#moodText {
+  position: relative;
+  top: -10px;
+  left: 90px;
+  color:black;
+}
+
+#searchContainer {
+  position: relative;
+  top: 10px;
+}
+
+#sBG{
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  background-color: var(--beige);
+  outline: 1px solid var(--dark--grey);
+}
+#sFG {
+  position: absolute;
+  z-index: 1;
+}
+
+#checkListContainer {
+  position: relative;
+  top: 0px;
+  width: 300px;
+  display: grid; /* Enable Grid layout*/
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.recDiv {
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  /* outline: 2px solid orange; */
+  width: 33%;
+}
+#loginChip{
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #4b403d;
+  color:white;
+}
+
+#returnBtn{
+  position: absolute;
+  right: 217px;
+  top: -10px;
+  outline: 1px solid var(--dark--grey);
+}
+
+#loginBtn:hover{
+  box-shadow: 2px 2px 8px #bd9e91;
+  opacity: 1;
+  background-color: white;
+}
+
+#recipeInfoWrapper {
+  overflow: scroll;
+  position: fixed;
+  top: 61px;
+  left: 301px;
+  width: 1140px;
+  height: 100vh;
+  background-color: var(--dark--beige);
+}
+
+#recipeInstructions {
+  width: 600px;
+}
+
+.instruction {
+  margin-top: 5px;
+  font-size: 17px;
+}
+
+#recipeInfoContainer {
+  position: relative;
+  left: 200px;
+  top: 30px;
+  /* outline: 2px solid green; */
+}
+
+#recipeImage{
+  width: 600px;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#logo {
+  position: absolute;
+  height: 40px;
+  left: 39px;
+  bottom: 5px;
+}
+
+#recipeFooterImg{
+  position: absolute;
+  left: 25%;
+  height: 70px;
+  transform: translateX(-0%);
+}
+
+#recipeFooter{
+  height: 130px;
+}
+
+.ingredient{
+  font-size: 17px;
+}
+
+#websiteName{
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%)
+}
+
+.divider{
+  outline: 0.5px solid var(--dark--grey);
+}
+
+#recipeRating{
+  margin-top: 20px;
+}
+
+#recipeRatingBeets{
+  position: absolute;
+  top: 110px;
+  left: 105px;
+}
+
+.tags {
+  margin-left: 5px;
+  margin-right:5px;
+}
+
+#recipeTags {
+  margin-bottom: 15px;
+}
+
+#triangle {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  width: 50%;
+  height: 100vh;
+  background-color: rgb(30,30,30);
+  clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 20% 100%);
+}
+
+#triangle2 {
+  position: absolute;
+  z-index: -1;
+  right: 0%;
+  top: 0;
+  width: 90%;
+  height: 100vh;
+  background-color: rgb(50,50,50);
+  clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 44% 0%);
+}
+
+.TextField-without-border-radius fieldset {
+  border-radius: 0;
+}

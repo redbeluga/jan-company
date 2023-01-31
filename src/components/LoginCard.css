@@ -1,0 +1,45 @@
+#loginCardContainer {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  height: 430px;
+  width: 600px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#loginCardLogo {
+  background-color: rgb(20,20,20);
+  width: 200px;
+  height: 200px;
+  position: relative;
+  bottom: 60px;
+}
+
+#loginCardLogoImg {
+  filter: brightness(0) invert(1);
+  height: 160px;
+  position: absolute;
+  transform: translate(45%, 10%);
+}
+
+#loginCardText {
+  position: absolute;
+  top: 67%;
+  color: black;
+}
+
+#loginInput {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#loginInputTextfield{
+  width: 300px;
+}

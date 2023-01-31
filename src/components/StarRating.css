@@ -1,0 +1,24 @@
+/* button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+} */
+.on {
+
+}
+.off {
+  filter: grayscale(100%);
+}
+
+#transparent {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.beetRating {
+  height: 25px;
+  margin-right: -3px;
+}
